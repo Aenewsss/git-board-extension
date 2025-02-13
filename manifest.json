@@ -1,0 +1,39 @@
+{
+    "manifest_version": 3,
+    "name": "GitBoard AI",
+    "key": "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUFqb3FwNkxEbjNCb1F1cnFwd0d1Lwp1SjExNkozVys0UHlVVENTbXV6S0dwRVdpMDM3alFCRENITnBGakgzK1F6M1QvUTBsdWE4a3FyZ0hjTTM1NjJ1CkdieitUL3d2RWFKeXRMd3EwWXV6ektya1QxMWJqZGdIUUduNUxOblM0VnNzRFlEYXFkaWEvbzBZRVh3SmpDMkgKSnQzcGlYalptd3pBVCtWN01LQk1vNE11WHVJdzF2KzREQ0lQM3hYQ0ZsQzlvNFBENmlmL2k5dHJmQlBNSUl0Ygo1eTg4OGNQN05DVnlGQytOdG83UllCblQyZWRDVi9aMWcram1DNGVNQ1N0MU94cEI5S1czVGRBREZYZzV0US9KCkRXb3VUZGNRT2tHdmtTdlI4aGNtYjRLdFREVVZzNlZSN1BoU0ErYzVsK1VmRlA4Snl5SS96ZXN5YUhrK1ZxM1EKQ3dJREFRQUIKLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tCg==",
+    "version": "1.0",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "identity"
+    ],
+    "host_permissions": [
+        "https://api.github.com/*"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "logo.png",
+            "32": "logo.png",
+            "64": "logo.png",
+            "128": "logo.png"
+        }
+    },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "popup.html",
+                "popup.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}
