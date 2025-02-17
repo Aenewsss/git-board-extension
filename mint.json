@@ -1,18 +1,25 @@
 {
-  "name": "Nome do Seu Projeto",
-  "theme": "default",
+  "name": "Meu Projeto",
+  "theme": "venus", 
+  "favicon": "/favicon.ico",
+  "colors": {
+    "primary": "#4F46E5",
+    "secondary": "#6B7280"
+  },
   "navigation": [
     {
-      "title": "Introdução",
-      "file": "docs/index.md"
+      "group": "Introdução",
+      "pages": [
+        { "name": "Visão Geral", "file": "docs/intro.md" },
+        { "name": "Instalação", "file": "docs/install.md" }
+      ]
     },
     {
-      "title": "API",
-      "file": "docs/api.md"
-    },
-    {
-      "title": "Guia de Uso",
-      "file": "docs/usage.md"
+      "group": "API",
+      "pages": [
+        { "name": "Autenticação", "file": "docs/auth.md" },
+        { "name": "Endpoints", "file": "docs/endpoints.md" }
+      ]
     }
   ]
 }
